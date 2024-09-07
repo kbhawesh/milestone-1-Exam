@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixlab</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100">
+    <!--Navbar-->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600" >Pixlab</a>
+            <div class=" hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-indigo-600">Features</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600">About</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+            <button  class="md:hidden text-indigo-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+               </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="bg-indigo-600 py-20 text-white">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6">Welcome to Pixlab</h1>
+            <p class="text-lg mb-6">The best place to edit, enhance, and transform your images online. </p>
+            <a href="#" class="bg-white text-indigo-600 py-2 px-6 rounded-lg hover:bg-gray-200 transition">Explore Features</a>
+        </div>
+    </section>
+
+    <!--Features Section-->
+    <section id="Features" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Our Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!--Feature 1-->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:translate-y-2">
+                    <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Feature 1" class="w-full mb-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Image Enhancements</h3>
+                    <p>Improve the quality of your photos with our advanced enhancement tools.</p>
+                </div>
+                <!--Feature 2-->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:translate-y-2">
+                    <img src="https://images.pexels.com/photos/256643/pexels-photo-256643.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Feature 2" class="w-full mb-6 rounded-lg ">
+                    <h3 class="text-2xl font-semibold mb-4">Photo Editing</h3>
+                    <p>Crop, rotate, adjust colors, and more with our powerful photo Editing software.</p>
+
+                </div>
+                <!--feature 3-->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:translate-y-2">
+                    <img src="https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Feature 3" class="w-full mb-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4">AI Transformations</h3>
+                    <p>Use AI to transform your photos into stunning artwork with just one click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="About" class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">About Us</h2>
+            <p class="text-lg">Pixlab is a leading platform for all your image editing and enhancement needs. With cutting-edge AI tools, we make it easier than ever to turn your ideas into reality. </p>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="Contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Contact Us</h2>
+            <form class="w-full max-w-lg mx-auto">
+                <div class="mb-6">
+                    <input type="text" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600">
+                </div>
+                <div class="mb-6">
+                    <input type="email" placeholder="Your Email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600">
+                </div>
+                <div class="mb-6">
+                    <textarea name="textarea" placeholder="Your Message" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600"></textarea>
+                </div>
+                <button class="bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Pixlab. All rights seserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

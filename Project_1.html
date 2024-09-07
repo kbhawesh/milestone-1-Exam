@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-GURU</title>
+    <style>
+        /* General Styles */
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+div > h1{
+    color: #fff;
+}
+div > h1 > span{
+    color: #00ee10ea;
+}
+h1,h2,h3{
+    color: #333;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+/* Header Styles */
+.contaier1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.1s ease;
+    
+    
+}
+header a:hover{
+    font-weight: bold;
+    color: white;
+    background-color: #0a75f0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size:18px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    display: inline;
+    padding: 0 20px 0 20px ;
+}
+
+/* Hero Section */
+.hero{
+    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fG9ubGluZSUyMGNvdXJzZXxlbnwwfHx8fDE2MDY2MTI1NTQ&ixlib=rb-1.2.1&q=80&w=1500')no-repeat center/cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff97;
+}
+.hero p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cta-button{
+    background: #0779e4;
+    display: inline-block; 
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.cta-button:hover{
+    font-weight: bold;
+    font-size:18px ;
+}
+
+/* Course Section */
+
+.courses{
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.course-grid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.course-item{
+    background: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+.course-item img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.course-item h3{
+    margin-bottom: 10px;
+    color: #0779e4;
+}
+
+/* Testimonials Section */
+.testimonials{
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-item{
+    margin-bottom: 30px;
+}
+.testimonial-item h3{
+    margin-top: 10px;
+    color: #0779e4;
+}
+
+/* Footer Section */
+footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+
+@media(max-width : 768px){
+    .course-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course-item{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero h2{
+        font-size: 32px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    header ul{
+        float: none;
+        text-align: center;
+        padding: 0px;
+    }
+    header ul li{
+        display: block;
+        padding: 10px 0;
+        margin: 5px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!--Header section-->
+    <header>
+        <div class="contaier contaier1">
+            <h1>E<span>-</span>Guru</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero Section-->
+    <section class="hero">
+        <div class="container">
+            <h2>Empowering Your Learning Journey</h2>
+            <p>Discover world-class Course anytime, anywhere.</p>
+            <a href="#" class="cta-button">Explore Course</a>
+        </div>
+    </section>
+
+    <!--Course Section-->
+    <section class="courses">
+        <div class="container">
+            <h2>Featured Course</h2>
+            <div class="course-grid">
+                <div class="course-item">
+                    <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHx3ZWIgZGV2ZWxvcG1lbnR8ZW58MHx8fHwxNjA2NjEyNTU0&ixlib=rb-1.2.1&q=80&w=400" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Learn to build and design responsive wesites.</p>
+                </div>
+
+                <div class="course-item">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxkYXRhJTIwc2NpZW5jZXxlbnwwfHx8fDE2MDY2MTI1NTQ&ixlib=rb-1.2.1&q=80&w=400" alt="Data Science">
+                    <h3>Data Science</h3>
+                    <p>Master data analysis, statistics,and machine Learning.</p>
+                </div>
+
+                <div class="course-item">
+                    <img src="https://images.pexels.com/photos/6930542/pexels-photo-6930542.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Graphic design">
+                    <h3>Graphic design</h3>
+                    <p>Learn Adobe Photoshop, Illustrator, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials Section-->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Students Say</h2>
+            <div class="testimonial-item">
+                <p>"E-Guru has transformed my career! The content is easy to follow and engaging."</p>
+                <h3>-Alex</h3>
+            </div>
+            
+            <div class="testimonial-item">
+                <p>"Great platform wih excellent instructions. I learned a lot in just a few months!"</p>
+                <h3>-Sarahk</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section-->
+     <footer>
+        <div class="container">
+            <p>&copy; 2024 E-Guru. All rights reserved.</p>
+        </div>
+     </footer>
+</body>
+</html>

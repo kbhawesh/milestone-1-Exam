@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Landing Page</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+</head >
+<body class="font-sans bg-gray-100">
+
+    <!--Header-->
+    <header class="bg-gray-900 text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-2xl font-bold">Bike Shop</h1>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="hover:text-yellow-500 ">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Bikes</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+
+    <!--Hero Section-->
+    <section class="relative">
+        <img src="https://images.pexels.com/photos/14494621/pexels-photo-14494621.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bike" class="w-full h-96 object-cover">
+
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
+            <h2 class="text-white text-4xl font-bold mb-4">Discover Your Perfect Ride</h2>
+            <p class="text-white text-lg mb-6">Explore the latest collection of bike design for performance and style.</p>
+            <a href="#" class="bg-yellow-500 text-white px-6 py-3 rounded hover:bg-yellow-600">Shop Now</a>
+        </div>
+    </section>
+
+    <!--Features Section-->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Why Choose Our Bikes?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 rounded shadow">
+                    <img src="https://images.pexels.com/photos/2270328/pexels-photo-2270328.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mountaine Bike" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">High performance</h3>
+                    <p>Built for speed and agility with cutting-edge components.</p>
+                </div>
+
+                <div class="p-6 bg-gray-100 rounded shadow">
+                    <img src="https://images.pexels.com/photos/27777228/pexels-photo-27777228/free-photo-of-motorcycle.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Road Bike" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Comfort and Durability</h3>
+                    <p>Designed for long rides with maximum comfort and Durability.</p>
+                </div>
+
+                <div class="p-6 bg-gray-100 rounded shadow">
+                    <img src="https://images.pexels.com/photos/16002184/pexels-photo-16002184/free-photo-of-a-motorcycle-parked-on-the-side-of-the-road.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bike Accessories" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Premium Accessories</h3>
+                    <p>Accessorize your bike with Premium-quality gear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Call to Action Section-->
+    <Section class="py-16 bg-gray-900 text-white text-center">
+        <h2 class="text-4xl font-bold mb-4">Ready to Ride?</h2>
+        <p class="text-lg mb-6">Find your perfect bike today and hit the road with confidence.</p>
+        <a href="#" class="bg-yellow-500 text-white px-8 py-4 rounded hover:bg-yellow-600">Get Started</a>
+    </Section>
+
+    <!--Footer-->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Bike Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

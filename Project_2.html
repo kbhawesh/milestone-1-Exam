@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health</title>
+   <style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Styles */
+header {
+    background: #28a745;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .logo span {
+    color: #ffd700;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('health-hero.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.services-box {
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.services-box h3 {
+    font-size: 1.8rem;
+}
+
+.services-box p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .services {
+        padding: 30px 20px;
+    }
+
+    .services-box {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .nav-links {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services-box h3 {
+        font-size: 1.5rem;
+    }
+}
+
+   </style>   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Health <span>&</span>Wellness</div>
+            <ul class="nav-links">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>Your Path to a Helththier Life</h1>
+            <p>We provide the best wellness tips and services for a healthy Life.</p>
+                <a href="#services" class="btn">Explore Services</a>
+        </section>
+    </header>
+
+    <section id="Services" class="services">
+        <h2>Our services</h2>
+
+        <div class="services-box">
+            <h3>Nutrition</h3>
+            <p>Personalized nutrition plans  to improve your well-being.</p>
+        </div>
+
+        <div class="services-box">
+            <h3>Fitness</h3>
+            <p>Get fit with tailored workouts for all levels.</p>
+        </div>
+
+        <div class="services-box">
+            <h3>Mental Health</h3>
+            <p>Support for your mental and emotuional well-being.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Helath & wellness. All rights reserved.</p>
+    </footer>    
+</body>
+</html>
